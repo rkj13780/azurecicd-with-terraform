@@ -1,0 +1,15 @@
+followed below steps:
+1) ensure the .net version 3.1 and docker command working
+2) mkdir cicd and cd cicd
+3) dotnet new --> will list all the templates available
+4) dotnet new webapi -n weatherapi
+5) code -r weatherapi --> it will open in new code ide
+6) goto terminal then dotnet build, dotnet run and test the url -> http://localhost:5000/WeatherForecast
+6) add docker file Dockerfile to project
+7) copy its content into it from github or your local project
+8) dockdr buld . -t rkj13780/weatherapi
+9) docker run -p 8080:80 rkj13780/weatherapi
+10) browse in browser http://localhost:8080/wheatheraip
+11) Ctr + C
+12: docker ps and docker stop <containername>
+13) docker push rkj13780/weatherapi
